@@ -1,6 +1,10 @@
-def wake(plainText):
+def encrypt(plainText):
+    return plainText
+def dencrypt(cipherText):
     return plainText
 
+def M(x,y):
+    return 
 """
 17.3 WAKE
 WAKE is the Word Auto Key Encryption algorithm, invented by David

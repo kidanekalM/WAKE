@@ -1,5 +1,5 @@
-from wake import wake
+from encrypt import wake
     
 plainText = input("Enter the text")
-cipherText = wake(plainText)
+cipherText = encrypt(plainText)
 print("The cipher text is :",cipherText)
