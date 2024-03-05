@@ -1,0 +1,2 @@
+def generateSbox(key):
+    return {}

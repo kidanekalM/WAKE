@@ -10,11 +10,14 @@ def M(x,y):
 """
 17.3 WAKE
 WAKE is the Word Auto Key Encryption algorithm, invented by David        
-Wheeler [1589]. It produces a stream of 32-bit words which can be XORed  
-with a plaintext stream to produce ciphertext, or XORed with a ciphertext
-stream to produce plaintext. And it’s fast.                              
-WAKE works in CFB; the previous ciphertext word is used to generate the  
-next key word. It also uses an S-box of 256 32-bit values. This S-box has a     
+Wheeler [1589]. 
+It produces a stream of 32-bit words which can be XORed  
+with a plaintext stream to produce ciphertext,
+
+or XORed with a ciphertext stream to produce plaintext. And it’s fast.                              
+WAKE works in CFB; 
+the previous ciphertext word is used to generate the next key word.
+ It also uses an S-box of 256 32-bit values. This S-box has a     
 special property: The high-order byte of all the entries is a permutation of all
 possible bytes, and the low-order 3 bytes are random.                           
 First, generate the S-box entries, Si, from the key. Then initialize four registers
