@@ -10,7 +10,7 @@ def dencrypt(cipherText):
     # XOR with
     "sdfor XORed with a ciphertext stream to produce plaintext. And it’s fast. WAKE works in CFB; "
     return plainText     
-def GenerateKey(text):         
+def GenerateKey(text):   
     # ai+1 = M(ai ,di)  
     # bi+1 = M(bi ,ai+1)
     # ci+1 = M(ci,bi+1) 
