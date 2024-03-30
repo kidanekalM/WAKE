@@ -13,11 +13,12 @@ def generate_sbox(key):
 
     # Combine the high-order byte and low-order 3 bytes to form the S-box entries
     for i in range(256):
-        sbox[i] = (permutation[i] << 24) | (random_values[i][0] << 16) | (random_values[i][1] << 8) | random_values[i][2]
+        sbox[i] = ((permutation[i] << 24) | (random_values[i][0] << 16) | (random_values[i][1] << 8) | random_values[i][2])
 
     return sbox
 
 # Generate the S-box using a key
 key = [random.randint(0, 255) for _ in range(4)]  # Replace this with your actual key
 sbox = generate_sbox(key)
+
 print(sbox)

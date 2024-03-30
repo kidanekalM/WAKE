@@ -150,3 +150,6 @@ version of Dr. Solomon’s Anti-Virus program.
 
 # The final result "ROBBI RAHIM" after it was hexadecimal is "524F42424920524148494D", the results of this hexadecimal performed XOR process with a key "C25D0330", the process is as follows:
 
+# Sbox
+# enx
+# xor
