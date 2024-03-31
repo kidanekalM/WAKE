@@ -22,3 +22,46 @@ key = [random.randint(0, 255) for _ in range(4)]  # Replace this with your actua
 sbox = generate_sbox(key)
 
 print(sbox)
+
+
+
+
+
+
+
+
+
+
+
+
+class WAKE:
+    def __init__(self, key):
+        self.key = key
+        self.T = [0]*256
+        self.initialize_T()
+
+    def initialize_T(self):
+        # This is a simplified example and does not represent the actual initialization of T in WAKE
+        for i in range(256):
+            self.T[i] = (i + self.key) % 256
+
+    def encrypt(self, plaintext):
+        ciphertext = []
+        for char in plaintext:
+            # This is a simplified example and does not represent the actual encryption process in WAKE
+            ciphertext.append(char ^ self.T[char])
+        return bytes(ciphertext)
+
+    def decrypt(self, ciphertext):
+        plaintext = []
+        for char in ciphertext:
+            # This is a simplified example and does not represent the actual decryption process in WAKE
+            plaintext.append(char ^ self.T[char])
+        return bytes(plaintext)
+
+# Example usage
+wake = WAKE(123)
+ciphertext = wake.encrypt(b"Hello, World!")
+print("Ciphertext:", ciphertext)
+plaintext = wake.decrypt(ciphertext)
+print("Plaintext:", plaintext)
