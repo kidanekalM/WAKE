@@ -65,3 +65,4 @@ ciphertext = wake.encrypt(b"Hello, World!")
 print("Ciphertext:", ciphertext)
 plaintext = wake.decrypt(ciphertext)
 print("Plaintext:", plaintext)
+#Fool
