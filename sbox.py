@@ -29,6 +29,7 @@ sbox = generate_sbox(key)
 #     return sbox
 
 sbox = generate_sbox("key")
+print(bin(ord('a')))
 sbox.sort()
-for i in range(0,256):
-    print(sbox[i])
+# for i in range(0,256):
+    # print(sbox[i])
