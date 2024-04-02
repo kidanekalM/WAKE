@@ -19,14 +19,16 @@ def generate_sbox(key):
 # Generate the S-box using a key
 key = [random.randint(0, 255) for _ in range(4)]  # Replace this with your actual key
 sbox = generate_sbox(key)
-print(sbox)
 
-def generate_sbox():
-    sbox = [0] * 256
-    t = 0
-    for i in range(256):
-        t = (t + i) % 256
-        sbox[i] = bin(t)
-    return sbox
+# def generate_sbox():
+#     sbox = [0] * 256
+#     t = 0
+#     for i in range(256):
+#         t = (t + i) % 256
+#         sbox[i] = bin(t)
+#     return sbox
 
-sbox = generate_sbox()
+sbox = generate_sbox("key")
+sbox.sort()
+for i in range(0,256):
+    print(sbox[i])
