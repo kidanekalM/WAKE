@@ -27,9 +27,10 @@ sbox = generate_sbox(key)
 #         t = (t + i) % 256
 #         sbox[i] = bin(t)
 #     return sbox
+# 128 bit key
 
 sbox = generate_sbox("key")
-print(bin(ord('a')))
+print(hex(ord('a')))
 sbox.sort()
 # for i in range(0,256):
     # print(sbox[i])
