@@ -1,4 +1,7 @@
-from sbox import sBlock 
+import random
+from sbox import sBlock
+random.shuffle(sBlock)
+# print(sBlock)
 def calculate_next_value(R, prevR):
     R_decimal = int(R, 16)
     prevR_decimal = int(prevR, 16)
