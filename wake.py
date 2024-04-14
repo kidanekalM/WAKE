@@ -1,7 +1,10 @@
 import random
 from sbox import sBlock
+
+#shuffle the sbox to add more confusion
 random.shuffle(sBlock)
 # print(sBlock)
+
 def calculate_next_value(R, prevR):
     R_decimal = int(R, 16)
     prevR_decimal = int(prevR, 16)
@@ -20,6 +23,7 @@ def get_hex_numeric_sequence(input_string):
         numeric_sequence.append(char_value)
     return numeric_sequence
 
+#Generate aoto key from the input key
 def get_auto_key(plain_key):
     # Get hex key
     hexadecimal_result = []
