@@ -59,7 +59,7 @@ def decrypt(cipher_text,key):
         decrypted_numeric.append(decrypted_char)
 
     decrypted_text = ''.join(chr(num) for num in decrypted_numeric)
-    print("Decrypted text: ",decrypted_text)
+    # print("Decrypted text: ",decrypted_text)
     return decrypted_text
 
 def encrypt(plaintext,input_key):
@@ -74,8 +74,8 @@ def encrypt(plaintext,input_key):
         encrypted_numeric.append(encrypted_char)
 
     encrypted_text = ''.join(chr(num) for num in encrypted_numeric)
-
-    print("Encrypted text: " , encrypted_text)
+    return encrypted_text
+    # print("Encrypted text: " , encrypted_text)
     # textBox2.delete("1.0", "end")
     # textBox2.insert("1.0", encrypted_text)
 
@@ -84,7 +84,22 @@ def encrypt(plaintext,input_key):
     # for i in range(len(plaintext)):
     #     dataGridView1.insert('', 'end', values=(i + 1, plaintext[i], plaintext_numeric[i], key_numeric[i % len(key_numeric)], encrypted_numeric[i], chr(encrypted_numeric[i])))
 
-    return encrypted_text
+    # return encrypted_text
 
-encrypt("aaaaaaaaaaaaaa","aaaaaaaaaaaaaaaa")
-decrypt('QQWP"R RQQWP"R',"aaaaaaaaaaaaaaaa")
+enc = encrypt("FineGuy","FineTheManBerariwSuperman")
+dec = decrypt(enc,"FineTheManBerariwSuperman")
+print("Encrypted text: ",enc)
+print("Decrypted text: ",dec)
+
+
+
+
+
+
+
+
+
+
+
+
+
