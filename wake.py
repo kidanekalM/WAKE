@@ -2,6 +2,7 @@ import random
 from sbox import sBlock
 
 #shuffle the sbox to add more confusion
+#use same sbox for one session i.e to encrypt and decrypt
 random.shuffle(sBlock)
 # print(sBlock)
 
